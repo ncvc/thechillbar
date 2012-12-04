@@ -1,5 +1,35 @@
 <html>
   <body>
-    This is a test page
+    <form name="set_rgb_color" method="post">
+	{% csrf_token %} 
+	<div>R: <input type="text" name="r"></div>
+	<div>G: <input type="text" name="g"></div>
+	<div>B: <input type="text" name="b"></div>
+	<input type="submit" value="Set Color">
+    </form>
+
+    <form name="set_mode_color_chase" method="post">
+	{% csrf_token %}
+	<input type="hidden" name="animation" value="color_chase">
+	<input type="submit" value="Color Chase">
+    </form>
+
+    <form name="set_mode_color_wipe" method="post">
+	{% csrf_token %}
+	<input type="hidden" name="animation" value="color_wipe">
+	<input type="submit" value="Color Wipe">
+    </form>
+
+    <form name="set_mode_rainbow" method="post">
+	{% csrf_token %}
+	<input type="hidden" name="animation" value="rainbow">
+	<input type="submit" value="Rainbow">
+    </form>
+
+    <form name="set_mode_rainbow_cycle" method="post">
+	{% csrf_token %}
+	<input type="hidden" name="animation" value="rainbow_cycle">
+	<input type="submit" value="Rainbow Cycle">
+    </form>
   </body>
-</html<
+</html>
