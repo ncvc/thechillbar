@@ -2,15 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>thechillbar</title>
+    <title>Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    
-    {% load staticfiles %}
 
     <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ STATIC_ROOT }}css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
@@ -33,8 +31,6 @@
 
     <!-- Navbar
     ================================================== -->
-
-    <!--
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -72,29 +68,31 @@
         </div>
       </div>
     </div>
--->
+
 <div class="jumbotron masthead">
   <div class="container">
-    <h1>thechillbar</h1>
+    <h1>Bootstrap</h1>
+    <p>Sleek, intuitive, and powerful front-end framework for faster and easier web development.</p>
     <p>
-      <a href="" class="btn btn-primary btn-large" >Rainbow</a>
+      <a href="assets/bootstrap.zip" class="btn btn-primary btn-large" >Download Bootstrap</a>
     </p>
-    <p>
-      <a href="" class="btn btn-primary btn-large" >Rainbow Cycle</a>
-    </p>
-    <p>
-      <a href="" class="btn btn-primary btn-large" >Color Chase</a>
-    </p>
-    <p>
-      <a href="" class="btn btn-primary btn-large" >Color Cycle</a>
-    </p>
-    <p>
-      <a href="" class="btn btn-primary btn-large" >Blackout</a>
-    </p>
+    <ul class="masthead-links">
+      <li>
+        <a href="http://github.com/twitter/bootstrap" >GitHub project</a>
+      </li>
+      <li>
+        <a href="./getting-started.html#examples" >Examples</a>
+      </li>
+      <li>
+        <a href="./extend.html" >Extend</a>
+      </li>
+      <li>
+        Version 2.2.1
+      </li>
+    </ul>
   </div>
 </div>
 
-<!--
 <div class="bs-docs-social">
   <div class="container">
     <ul class="bs-docs-social-buttons">
@@ -172,11 +170,10 @@
 
 </div>
 
--->
+
 
     <!-- Footer
     ================================================== -->
-<!--
     <footer class="footer">
       <div class="container">
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -193,7 +190,7 @@
       </div>
     </footer>
 
--->
+
 
     <!-- Le javascript
     ================================================== -->

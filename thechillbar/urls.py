@@ -8,7 +8,7 @@ import settings
 urlpatterns = patterns('',
     # Home Page
     url(r'^$', 'thechillbar.views.home', name='home'),
-    
+
     # url(r'^thechillbar/', include('thechillbar.foo.urls')),
 
     #Resources

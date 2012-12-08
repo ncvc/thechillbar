@@ -1,4 +1,4 @@
 thechillbar
 ===========
 
-python manage.py runserver
+Usage: ./run.sh
