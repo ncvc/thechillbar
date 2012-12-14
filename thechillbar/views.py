@@ -1,17 +1,21 @@
 from django.shortcuts import render_to_response
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_exempt
 from django.template import RequestContext
 import settings
+import simplejson
 
 # Hack to get lights working from here
 import sys
 sys.path.append('/home/pi/')
-from bar_lighting import Strip
+from bar_lighting import Strip, Animator
 
 NUM_PIXELS = 32
 
+@csrf_exempt
 def home(request):
+    print "got a request"
     #blacklist filtering
     resp = checkIP(request)
     if resp != None:
@@ -23,33 +27,8 @@ def home(request):
     
     #POST requests process posted data and perform LED actions
     if request.method == "POST":
-
-        strip = Strip.Strip(NUM_PIXELS)
-    
-        #animation handling
-        if request.POST.has_key("animation"):
-            animator = Strip.Animations(strip)
-            animation = request.POST.has_key("animation")
-
-            if animation == "rainbow_cycle":
-                animator.rainbowCycle()
-            elif animation == "rainbow":
-                animatorx.rainbowCycle()
-
-        #set r, g, b values directly
-        if request.POST.has_key('r') and request.POST.has_key('g') and request.POST.has_key('b'):
-            try:
-                #constrain to 0 <= r, g, b <= 127
-                r = min(max(0, int(request.POST['r'])), 127)
-                g = min(max(0, int(request.POST['g'])), 127)
-                b = min(max(0, int(request.POST['b'])), 127)
-                strip.setColor([r, g, b])
-                strip.show()
-
-            except Exception:
-                print Exception
-
-    return render_to_response('index2.html', context_instance=RequestContext(request))
+        Animator.sendMessage(request.POST.get('command'))
+        return render_to_response('index2.html', context_instance=RequestContext(request))
 
 def checkIP(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
