@@ -35,15 +35,27 @@ $(function() {
 	}
     );
 
-    $("#random-choice-button").click(
+    $("#droplets-button").click(
 	function(){
-	    $.post("/", { command : "randomchoice" } );
+	    $.post("/", { command : "droplets" } );
 	}
     );
 
-    $("#toggle-christmas-mode-button").click(
+    $("#additive-cycle-button").click(
 	function(){
-	    $.post("/", { command : "togglexmasmode" } );
+	    $.post("/", { command : "additivecycle" } );
+	}
+    );
+
+    $("#additive-fade-button").click(
+	function(){
+	    $.post("/", { command : "additivefade" } );
+	}
+    );
+
+    $("#random-choice-button").click(
+	function(){
+	    $.post("/", { command : "randomchoice" } );
 	}
     );
 });

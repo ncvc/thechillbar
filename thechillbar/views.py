@@ -15,7 +15,6 @@ NUM_PIXELS = 32
 
 @csrf_exempt
 def home(request):
-    print "got a request"
     #blacklist filtering
     resp = checkIP(request)
     if resp != None:
@@ -41,7 +40,8 @@ def checkIP(request):
     last_ips.write(ip + '\n')
 
     f = open('ip_blacklist.txt')
-    if ip in f:
+    
+    if ip in f.read():
     	print 'IP %s blocked by blacklist' % ip
     	return render_to_response('blacklist.html', context_instance=RequestContext(request))
     print ip
