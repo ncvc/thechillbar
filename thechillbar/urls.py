@@ -9,6 +9,8 @@ urlpatterns = patterns('',
     # Home Page
     url(r'^$', 'thechillbar.views.home', name='home'),
 
+    url(r'sign', 'thechillbar.views.sign', name='sign'),
+
     # url(r'^thechillbar/', include('thechillbar.foo.urls')),
 
     #Resources

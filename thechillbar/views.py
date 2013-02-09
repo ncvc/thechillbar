@@ -11,6 +11,8 @@ import sys
 sys.path.append('/home/pi/')
 from bar_lighting import Strip, Animator
 
+from alphasign import AlphaSign
+
 NUM_PIXELS = 32
 
 @csrf_exempt
@@ -28,6 +30,17 @@ def home(request):
     if request.method == "POST":
         Animator.sendMessage(request.POST.get('command'))
         return render_to_response('index2.html', context_instance=RequestContext(request))
+
+@csrf_exempt
+def sign(request):
+    if request.method == "GET":
+        return render_to_response('sign.html', context_instance=RequestContext(request))
+    
+    elif request.method == "POST":
+        s = AlphaSign.Sign('/dev/ttyUSB0')
+        s.setClock()
+        s.sendText('A', AlphaSign.encodeText(request.POST.get('message')), AlphaSign.MODE_ROTATE)
+        return render_to_response('sign.html', context_instance=RequestContext(request))
 
 def checkIP(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
