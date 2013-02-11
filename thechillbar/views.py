@@ -9,7 +9,8 @@ import SignAnimator
 
 # Hack to get lights working from here
 import sys
-sys.path.append('/home/pi/')
+# Path to bar_lighting and alphasign - specified in settings_local.py
+sys.path.append(settings.DEPENDENCIES_PATH)
 from bar_lighting import Strip, Animator
 
 NUM_PIXELS = 32
