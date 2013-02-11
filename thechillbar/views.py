@@ -24,17 +24,17 @@ def home(request):
 
     #GET requests return main page
     if request.method == "GET":
-        return render_to_response('index2.html', context_instance=RequestContext(request))
+        return render_to_response('index.html', context_instance=RequestContext(request))
     
     #POST requests process posted data and perform LED actions
     if request.method == "POST":
         Animator.sendMessage(request.POST.get('command'))
-        return render_to_response('index2.html', context_instance=RequestContext(request))
+        return render_to_response('index.html', context_instance=RequestContext(request))
 
 @csrf_exempt
 def sign(request):
     if request.method == "GET":
-        return render_to_response('index2.html', context_instance=RequestContext(request))
+        return render_to_response('index.html', context_instance=RequestContext(request))
     
     elif request.method == "POST":
         s = AlphaSign.Sign('/dev/ttyUSB0')
