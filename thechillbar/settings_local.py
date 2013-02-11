@@ -1,1 +1,0 @@
-DEPENDENCIES_PATH = '/home/ncvc/Programming/'
