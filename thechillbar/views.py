@@ -34,7 +34,7 @@ def home(request):
 @csrf_exempt
 def sign(request):
     if request.method == "GET":
-        return render_to_response('sign.html', context_instance=RequestContext(request))
+        return render_to_response('index2.html', context_instance=RequestContext(request))
     
     elif request.method == "POST":
         s = AlphaSign.Sign('/dev/ttyUSB0')
