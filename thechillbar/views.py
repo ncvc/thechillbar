@@ -18,47 +18,34 @@ UGC_LENGTH_LIMIT = 300
 
 @csrf_exempt
 def home(request):
-    blacklisted = checkIP(request)
-
     #GET requests return main page
-    if request.method == "GET" and not blacklisted:
-        return filter('index.html', request, blacklisted)
+    if request.method == "GET":
+        return filter('index.html', request, '')
     
     #POST requests process posted data and perform LED actions
     if request.method == "POST":
         command = request.POST.get('command')[:UGC_LENGTH_LIMIT]
-        print getIP(request), command
-        if not blacklisted:                         
+        if checkIP(request):
             Animator.sendMessage(command)
-        return filter('index.html', request, blacklisted)
+        return filter('index.html', request, command)
         
 @csrf_exempt
 def sign(request):
-    blacklisted = checkIP(request)
-    
     message = request.POST.get('message')[:UGC_LENGTH_LIMIT]
-    print getIP(request), message
-
-    if request.method == "POST" and not blacklisted:
+    if request.method == "POST" and checkIP(request):
         SignAnimator.sendMessage(message)
+    return filter('index.html', request, message)
 
-    return filter('index.html', request, blacklisted)
-
+#returns True if OK, False if on blacklist
 def checkIP(request):
     ip = getIP(request)
-
-    last_ips = open('past_ips.txt', 'a+')
-    last_ips.write(ip + '\n')
-    last_ips.close()
-
     f = open('ip_blacklist.txt')
-    
     if ip in f.read():
     	f.close()
         print 'IP %s blocked by blacklist' % ip
-        return True
+        return False
     f.close()
-    return False
+    return True
 
 def getIP(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
@@ -66,10 +53,14 @@ def getIP(request):
         ip = x_forwarded_for.split(',')[0]
     else:
         ip = request.META.get('REMOTE_ADDR')
-    return ip    
+    return ip
 
-def filter(filename, request, blacklisted):
-    if blacklisted:
-        return render_to_response('blacklist.html', context_instance=RequestContext(request))
-    else:
+def filter(filename, request, logtext):
+    log = open('log.txt', 'a+')
+    log.write("{0} {1} {2}\n".format(request.method, getIP(request), logtext))
+    log.close()
+
+    if checkIP(request):
         return render_to_response(filename, context_instance=RequestContext(request))
+    else:
+        return render_to_response('blacklist.html', context_instance=RequestContext(request))
