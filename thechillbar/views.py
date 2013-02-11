@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.template import RequestContext
 import settings
 import simplejson
+import datetime
 import SignAnimator
 
 # Hack to get lights working from here
@@ -57,7 +58,7 @@ def getIP(request):
 
 def filter(filename, request, logtext):
     log = open('log.txt', 'a+')
-    log.write("{0} {1} {2}\n".format(request.method, getIP(request), logtext))
+    log.write("{0} {1} {2} {3}\n".format(datetime.datetime.now().strftime("%m-%d-%Y %H:%M:%S"), request.method, getIP(request), logtext))
     log.close()
 
     if checkIP(request):
