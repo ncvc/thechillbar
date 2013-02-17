@@ -38,6 +38,9 @@
 	  <li class="active"><a href="#bar-display-tab" data-toggle="tab">Bar Display</a></li>
 	  <li><a href="#led-sign-tab" data-toggle="tab">LED Sign</a></li>
 	  <li><a href="#playlist-tab" data-toggle="tab">Playlist</a></li>
+	  {% if user.is_authenticated %}
+	  <li><a href="#admin-tab" data-toggle="tab">Admin</a></li>
+	  {% endif %}
 	</ul>
 	<div class="tab-content">
 	  <div class="tab-pane active" id="bar-display-tab">	     
@@ -57,7 +60,7 @@
 	    </div>
 	  </div>
 	  <div class="tab-pane" id="led-sign-tab">
-	    <textarea rows="10" class="field span12" id="message-textarea" placeholder="enter you message here"></textarea>
+	    <textarea rows="10" class="field span12" id="message-textarea" placeholder="enter your message here"></textarea>
 	    <div class="row-fluid">
 	      <div class="span4"></div>
 	      <div class="span4"><p><button class="btn btn-large btn-block" id="publish-button">Publish</button></p></div>
@@ -92,21 +95,43 @@
 		</tr>
 	      </tbody>
 	    </table>
-	  </div>
+	  </div><!--plyalist tab-->
+	  <div class="tab-pane" id="admin-tab">
+	    <table class="table" id="sign-log">
+	      <thead>
+		<tr>
+		  <th>IP</th>
+		  <th>Message</th>
+		</tr>
+	      </thead>
+	      <tbody id="sign-log-body">
+	      </tbody>
+	    </table>  
+	  </div><!--admin tab-->
 	</div> <!--tab-content-->
       </div><!--span6-->
       <div class="span3 hidden-phone"></div>
     </div><!--rowfluid-->
     
-    <!-- Le javascript
-    ================================================== -->
+    <!-- Le javascript ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.tmpl.js"></script>
     <script src="assets/js/google-code-prettify/prettify.js"></script>
     <script src="assets/js/bootstrap-button.js"></script>
     <script src="assets/js/bootstrap-tab.js"></script>
     <script src="assets/js/thechillbar.js"></script>
+    {% if user.is_authenticated %}
+    <script src="assets/js/thechillbaradmin.js"></script>
+
+    <script id="sign-log-row-template" type="text/x-jquery-tmpl">
+      <tr>
+	<td>${ip}</td>
+	<td>${message}</td>
+      </tr>
+    </script>
+    {% endif %}
 
   </body>
 </html>

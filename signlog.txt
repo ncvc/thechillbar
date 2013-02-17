@@ -1,0 +1,7 @@
+POST 02-17-2013 13:09:52 18.96.6.66 test message
+POST 02-17-2013 13:10:16 18.96.6.66 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 13:10:26 18.96.6.66 another message
+for the ladies
+POST 02-17-2013 13:10:34 18.96.6.66 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 15:17:18 18.111.42.192 wazzup
+
