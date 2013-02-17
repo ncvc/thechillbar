@@ -40,6 +40,7 @@
 	    <ul class="nav nav-tabs">
 	      <li class="active"><a href="#bar-display-tab" data-toggle="tab">Bar Display</a></li>
 	      <li><a href="#led-sign-tab" data-toggle="tab">LED Sign</a></li>
+	      <li><a href="#playlist-tab" data-toggle="tab">Playlist</a></li>
 	    </ul>
 	    <div class="tab-content">
 	      <div class="tab-pane active" id="bar-display-tab">	     
@@ -65,152 +66,36 @@
 		  <div class="span4"><p><button class="btn btn-success btn-block" id="publish-button">Publish</button></p></div>
 		  <div class="span4"><p><button class="btn btn-primary btn-block" id="reset-button">Reset Sign</button></p></div>
 		</div>
-		<h3>Instructions</h3>
-		<div>Type your message into the box and click Publish to sent it to the sign.</div>
-		<div>Customize your message by adding tags to change the text color, font, and transitions.</div>
-		<h4>Example</h4>
-		<pre><code>&lt;red&gt;&lt;7&gt;&lt;speed3&gt;welcome to
-&lt;hold&gt;&lt;green&gt;&lt;7shadow&gt;&lt;speed1&gt;&lt;flash&gt;thechillbar&lt;/flash&gt;
-&lt;rotate&gt;&lt;amber&gt;&lt;7&gt;&lt;speed3&gt;&lt;\n&gt;check us out at thechillbar.mit.edu</code></pre>
-		<br>
-		<div class="row-fluid">
-		  <div class="span3">
-		    <table class="table table-bordered">
-		      <tbody>
-			<tr>
-			  <td><b>Font Tags</b></td>
-			</tr>
-			<tr>
-			  <td>&lt;5&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;5bold&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;5wide&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;5huge&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;7&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;7bold&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;7wide&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;7huge&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;7shadow&gt;</td>
-			</tr>
-		      </tbody>
-		    </table>
-		  </div><!--font tags span3-->
-		  
-		  <div class="span3">
-		    <table class="table table-bordered">
-		      <tbody>
-			<tr>
-			  <td><b>Color Tags</b></td>
-			</tr>
-			<tr>
-			  <td>&lt;autocolor&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;red&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;dimred&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;green&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;dimgreen&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;yellow&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;amber&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;orange&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;brown&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;mixcolor&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;rainbow&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;patchcolor&gt;</td>
-			</tr>
-		      </tbody>
-		    </table>
-		  </div><!--color tags span3-->
-		  
-		  <div class="span3">
-		    <table class="table table-bordered">
-		      <tbody>
-			<tr>
-			  <td><b>Transition Tags</b></td>
-			</tr>
-			<tr>
-			  <td>&lt;hold&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;rotate&gt;</td>
-			</tr>
-		      </tbody>
-		    </table>
-		  </div><!--transition tags span3-->
-
-		  <div class="span3">
-		    <table class="table table-bordered">
-		      <tbody>
-			<tr>
-			  <td><b>Other Tags</b></td>
-		        </tr>
-		        <tr>
-			  <td>&lt;\n&gt; (spacer)</td>
-			</tr>
-			<tr>
-			  <td>&lt;flash&gt; (flash on)</td>
-			</tr>
-			<tr>
-			  <td>&lt;/flash&gt; (flash off)</td>
-			</tr>
-			<tr>
-			  <td>&lt;clock&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;speed1&gt; (slow)</td>
-			</tr>
-			<tr>
-			  <td>&lt;speed2&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;speed3&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;speed4&gt;</td>
-			</tr>
-			<tr>
-			  <td>&lt;speed5&gt; (fast)</td>
-			</tr>
-		      </tbody>
-		    </table>
-		  </div><!--other tags span3-->
-		</div><!--rowfluid-->
-	      </div> <!--led tab-->
+	      </div> <!--led tab--> 
+	      <div class="tab-pane" id="playlist-tab" style="text-align : left; text-shadow : none">
+		<form class="form-search">
+		  <input type="text" class="search-query" placeholder="search for a title, album, or artist">
+		</form>
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th>#</th>
+		      <th>Title</th>
+		      <th>Album</th>
+		      <th>Add to Queue</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>1</td>
+		      <td>T.G.I.F.</td>
+		      <td>Katy Perry</td>
+		      <td><i class="icon-plus-sign icon-white"></i></td>
+		    </tr>
+		    <tr>
+		      <td>2</td>
+		      <td>Shots</td>
+		      <td>LMFAO</td>
+		      <td><i class="icon-plus-sign icon-white"></i></td
+		    </tr>
+		  </tbody>
+		</table>
+	      </div>
 	    </div> <!--tab-content-->
 	  </div><!--span6-->
 	  <div class="span3"></div>
