@@ -30,78 +30,73 @@
   </head>
 
   <body data-spy="scroll" data-target=".bs-docs-sidebar" style="padding-top:0px;">
-    <div class="jumbotron masthead">
-      <div class="container">
+    <div class="row-fluid">
+      <div class="span3 hidden-phone"></div>
+      <div class="span6">
 	<h1>thechillbar</h1>
-	<br>
-	<div class="row-fluid">
-	  <div class="span3"></div>
-	  <div class="span6">
-	    <ul class="nav nav-tabs">
-	      <li class="active"><a href="#bar-display-tab" data-toggle="tab">Bar Display</a></li>
-	      <li><a href="#led-sign-tab" data-toggle="tab">LED Sign</a></li>
-	      <li><a href="#playlist-tab" data-toggle="tab">Playlist</a></li>
-	    </ul>
-	    <div class="tab-content">
-	      <div class="tab-pane active" id="bar-display-tab">	     
-		<div class="row-fluid">
-		  <div class="span2"></div>
-		  <div class="span8">
-		    <p><a class="btn btn-primary btn-large btn-block" id="color-wipe-button">Wipe</a></p>
-		    <p><a class="btn btn-primary btn-large btn-block" id="rainbow-button">Fade</a></p>
-		    <p><a class="btn btn-primary btn-large btn-block" id="rainbow-cycle-button">Fade Cycle</a></p>
-		    <p><a class="btn btn-primary btn-large btn-block" id="droplets-button">Droplets</a></p>
-		    <p><a class="btn btn-primary btn-large btn-block" id="additive-cycle-button">Additive Cycle</a></p>
-		    <p><a class="btn btn-primary btn-large btn-block" id="additive-fade-button">Additive Fade</a></p>
-		    <p><a class="btn btn-primary btn-large btn-block" id="random-choice-button">Random Selection</a></p>
-		    <p><a class="btn btn-primary btn-large btn-block" id="blackout-button">Blackout</a></p>
-		  </div>
-		  <div class="span2"></div>
-		</div>
+	<ul class="nav nav-tabs">
+	  <li class="active"><a href="#bar-display-tab" data-toggle="tab">Bar Display</a></li>
+	  <li><a href="#led-sign-tab" data-toggle="tab">LED Sign</a></li>
+	  <li><a href="#playlist-tab" data-toggle="tab">Playlist</a></li>
+	</ul>
+	<div class="tab-content">
+	  <div class="tab-pane active" id="bar-display-tab">	     
+	    <div class="row-fluid">
+	      <div class="span2 hidden-phone"></div>
+	      <div class="span8">
+		<p><a class="btn btn-large btn-block" id="color-wipe-button">Wipe</a></p>
+		<p><a class="btn btn-large btn-block" id="rainbow-button">Fade</a></p>
+		<p><a class="btn btn-large btn-block" id="rainbow-cycle-button">Fade Cycle</a></p>
+		<p><a class="btn btn-large btn-block" id="droplets-button">Droplets</a></p>
+		<p><a class="btn btn-large btn-block" id="additive-cycle-button">Additive Cycle</a></p>
+		<p><a class="btn btn-large btn-block" id="additive-fade-button">Additive Fade</a></p>
+		<p><a class="btn btn-large btn-block" id="random-choice-button">Random Selection</a></p>
+		<p><a class="btn btn-large btn-block" id="blackout-button">Blackout</a></p>
 	      </div>
-	      <div class="tab-pane" id="led-sign-tab" style="text-align : left; text-shadow : none">
-		<textarea rows="10" class="field span12" id="message-textarea"></textarea>
-		<div class="row-fluid">
-		  <div class="span4"></div>
-		  <div class="span4"><p><button class="btn btn-success btn-block" id="publish-button">Publish</button></p></div>
-		  <div class="span4"><p><button class="btn btn-primary btn-block" id="reset-button">Reset Sign</button></p></div>
-		</div>
-	      </div> <!--led tab--> 
-	      <div class="tab-pane" id="playlist-tab" style="text-align : left; text-shadow : none">
-		<form class="form-search">
-		  <input type="text" class="search-query" placeholder="search for a title, album, or artist">
-		</form>
-		<table class="table">
-		  <thead>
-		    <tr>
-		      <th>#</th>
-		      <th>Title</th>
-		      <th>Album</th>
-		      <th>Add to Queue</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		    <tr>
-		      <td>1</td>
-		      <td>T.G.I.F.</td>
-		      <td>Katy Perry</td>
-		      <td><i class="icon-plus-sign icon-white"></i></td>
-		    </tr>
-		    <tr>
-		      <td>2</td>
-		      <td>Shots</td>
-		      <td>LMFAO</td>
-		      <td><i class="icon-plus-sign icon-white"></i></td
-		    </tr>
-		  </tbody>
-		</table>
+	      <div class="span2 hidden-phone"></div>
+	    </div>
+	  </div>
+	  <div class="tab-pane" id="led-sign-tab">
+	    <textarea rows="10" class="field span12" id="message-textarea" placeholder="enter you message here"></textarea>
+	    <div class="row-fluid">
+	      <div class="span4"></div>
+	      <div class="span4"><p><button class="btn btn-large btn-block" id="publish-button">Publish</button></p></div>
+	      <div class="span4"><p><button class="btn btn-inverse btn-large btn-block" id="reset-button">Reset Sign</button></p></div>
+	    </div>
+	  </div> <!--led tab--> 
+	  <div class="tab-pane" id="playlist-tab">
+	    <form class="form-search">
+	      <div class="input-append">
+		<input type="text" class="search-query" placeholder="title, album, or artist">
+		<button type="submit" class="btn">Search</button>
 	      </div>
-	    </div> <!--tab-content-->
-	  </div><!--span6-->
-	  <div class="span3"></div>
-	</div><!--rowfluid-->
-      </div><!--containter-->
-    </div><!--masthead-->
+	    </form>
+	    <table class="table">
+	      <thead>
+		<tr>
+		  <th>Title</th>
+		  <th>Artist</th>
+		  <th></th>
+		</tr>
+	      </thead>
+	      <tbody>
+		<tr>
+		  <td>T.G.I.F.</td>
+		  <td>Katy Perry</td>
+		  <td><button class="btn"><i class="icon-plus-sign"></i> Queue</button></td>
+		</tr>
+		<tr>
+		  <td>Shots</td>
+		  <td>LMFAO</td>
+		  <td><button class="btn"><i class="icon-plus-sign"></i> Queue</button></td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </div>
+	</div> <!--tab-content-->
+      </div><!--span6-->
+      <div class="span3 hidden-phone"></div>
+    </div><!--rowfluid-->
     
     <!-- Le javascript
     ================================================== -->
