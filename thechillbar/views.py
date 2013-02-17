@@ -34,7 +34,7 @@ def home(request):
 def sign(request):
     message = request.POST.get('message')[:UGC_LENGTH_LIMIT]
     if request.method == "POST" and checkIP(request):
-        SignAnimator.sendMessage(message)
+        SignAnimator.sendMessage(message.replace('\n', ''))
     return filter('index.html', request, message)
 
 #returns True if OK, False if on blacklist
