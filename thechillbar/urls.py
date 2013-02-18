@@ -8,6 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Home Page
     url(r'^$', 'thechillbar.views.home', name='home'),
+    url(r'^display$', 'thechillbar.views.display', name='display'),
     url(r'^sign$', 'thechillbar.views.sign', name='sign'),
     url(r'^login$', 'thechillbar.views.login', name='login'),
     url(r'^logout$', 'thechillbar.views.logout', name='logout'),

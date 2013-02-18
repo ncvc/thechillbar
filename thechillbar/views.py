@@ -25,18 +25,20 @@ NUM_PIXELS = 32
 UGC_LENGTH_LIMIT = 300
 
 @csrf_exempt
+@require_http_methods(['GET'])
 def home(request):
-    #GET requests return main page
-    if request.method == "GET":
-        return filter('index.html', request, 'log.txt', '')
-    #POST requests process posted data and perform LED actions
-    if request.method == "POST":
-        command = request.POST.get('command')[:UGC_LENGTH_LIMIT]
-        if checkIP(request):
-            Animator.sendMessage(command)
-        return filter('index.html', request, 'displaylog.txt', command)
-        
+    return filter('index.html', request, 'log.txt', '')
+    
 @csrf_exempt
+@require_http_methods(['POST'])
+def display(request):
+    command = request.POST.get('command')[:UGC_LENGTH_LIMIT]
+    if checkIP(request):
+        Animator.sendMessage(command)
+    return filter('index.html', request, 'displaylog.txt', command)
+
+@csrf_exempt
+@require_http_methods(['POST'])
 def sign(request):
     message = request.POST.get('message')[:UGC_LENGTH_LIMIT]
     if request.method == "POST" and checkIP(request):
@@ -73,7 +75,6 @@ def signlog(request):
     for line in log_lines:
         split_line = line.split()
         parsed_lines.append(split_line[:3] + [" ".join(split_line[3:])])
-    
 
     bannedIPs = set(getBannedIPList())
     log = []

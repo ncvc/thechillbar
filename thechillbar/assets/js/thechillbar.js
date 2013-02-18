@@ -23,59 +23,55 @@ $(function() {
     //Bar display code
     $("#blackout-button").click(
 	function(){
-	    $.post("/", { command : "blackout" } );
+	    $.post("/display", { command : "blackout" } );
 	}
     );
 
-    $("#set-color-button").click(
+    $("#wipe-button").click(
 	function(){
-	    var red    = $("#red").val()
-	    var green  = $("#green").val()
-	    var blue   = $("#blue").val()
-	    var commandString = "r:" + red + ",g:" + green + ",b:" + blue
-	    $.post("/", { command : commandString });
+	    $.post("/display", { command : "colorwipe" } );
 	}
     );
 
-    $("#color-wipe-button").click(
+    $("#fade-button").click(
 	function(){
-	    $.post("/", { command : "colorwipe" } );
+	    $.post("/display", { command : "rainbow" } );
 	}
     );
 
     $("#rainbow-button").click(
 	function(){
-	    $.post("/", { command : "rainbow" } );
+	    $.post("/display", { command : "rainbowcycle" } );
 	}
     );
 
-    $("#rainbow-cycle-button").click(
+    $("#color-cycle-button").click(
 	function(){
-	    $.post("/", { command : "rainbowcycle" } );
+	    $.post("/display", { command : "colorrotate" } );
+	}
+    );
+
+    $("#color-chase-button").click(
+	function(){
+	    $.post("/display", { command : "colorchase" } );
+	}
+    );
+
+    $("#additive-button").click(
+	function(){
+	    $.post("/display", { command : "additivecycle" } );
 	}
     );
 
     $("#droplets-button").click(
 	function(){
-	    $.post("/", { command : "droplets" } );
-	}
-    );
-
-    $("#additive-cycle-button").click(
-	function(){
-	    $.post("/", { command : "additivecycle" } );
-	}
-    );
-
-    $("#additive-fade-button").click(
-	function(){
-	    $.post("/", { command : "additivefade" } );
+	    $.post("/display", { command : "droplets" } );
 	}
     );
 
     $("#random-choice-button").click(
 	function(){
-	    $.post("/", { command : "randomchoice" } );
+	    $.post("/display", { command : "randomchoice" } );
 	}
     );
 
