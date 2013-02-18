@@ -61,8 +61,9 @@
 	  </div>
 	  <div class="tab-pane" id="led-sign-tab">
 	    <textarea rows="10" class="field span12" id="message-textarea" placeholder="enter your message here"></textarea>
+	    <div id="led-sign-alert-placeholder"></div>
 	    <div class="row-fluid">
-	      <div class="span4"></div>
+	      <div class="span4 hidden-phone"></div>
 	      <div class="span4"><p><button class="btn btn-large btn-block" id="publish-button">Publish</button></p></div>
 	      <div class="span4"><p><button class="btn btn-inverse btn-large btn-block" id="reset-button">Reset Sign</button></p></div>
 	    </div>
@@ -95,18 +96,30 @@
 		</tr>
 	      </tbody>
 	    </table>
-	  </div><!--plyalist tab-->
+	  </div><!--playlist tab-->
 	  <div class="tab-pane" id="admin-tab">
-	    <table class="table" id="sign-log">
+	    <a class="btn" id="refresh-sign-log-button"><i class="icon-refresh"></i> Refresh</a>
+	    <table class="table table-striped" id="sign-log-table">
 	      <thead>
 		<tr>
 		  <th>IP</th>
 		  <th>Message</th>
+		  <th></th>
 		</tr>
 	      </thead>
-	      <tbody id="sign-log-body">
+	      <tbody id="sign-log-table-body">
 	      </tbody>
-	    </table>  
+	    </table>
+	    <table class="table" id="banned-ip-table">
+	      <thead>
+		<tr>
+		  <th>Banned IPs</th>
+		  <th>Unban</th>
+		</tr>
+	      </thead>
+	      <tbody id="banned-ip-table-body">
+	      </tbody>
+	    </table>
 	  </div><!--admin tab-->
 	</div> <!--tab-content-->
       </div><!--span6-->
@@ -118,9 +131,12 @@
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/jquery.tmpl.js"></script>
+    <script src="assets/js/jquery-cookie/jquery.cookie.js"></script>
     <script src="assets/js/google-code-prettify/prettify.js"></script>
     <script src="assets/js/bootstrap-button.js"></script>
     <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
     <script src="assets/js/thechillbar.js"></script>
     {% if user.is_authenticated %}
     <script src="assets/js/thechillbaradmin.js"></script>
@@ -129,7 +145,29 @@
       <tr>
 	<td>${ip}</td>
 	<td>${message}</td>
+	<td><a class="btn btn-danger" id="ip-entry-${index}-ban-button" data-loading-text="Banning..."><i class="icon-ban-circle"></i></a></td>
       </tr>
+    </script>
+
+    <script id="banned-sign-log-row-template" type="text/x-jquery-tmpl">
+      <tr class="error">
+	<td>${ip}</td>
+	<td>${message}</td>
+	<td><a class="btn btn-success" id="ip-entry-${index}-unban-button"><i class="icon-ok-circle"></i></a></td>
+      </tr>
+    </script>
+
+    <script id="banned-ip-row-template" type="text/x-jquery-tmpl">
+      <tr>
+	<td>${ip}</td>
+	<td><a class="btn btn-success" id="banned-ip-entry-${index}-unban-button"><i class="icon-ok-circle"></i></a></td>
+      </tr>
+    </script>
+    <script id="alert-template" type="text/x-jquery-tmpl">
+      <div class="alert ${type} fade in" id="${id}">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	<strong>${primary}</strong> ${secondary}
+      </div>
     </script>
     {% endif %}
 

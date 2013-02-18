@@ -13,6 +13,8 @@ urlpatterns = patterns('',
     url(r'^logout$', 'thechillbar.views.logout', name='logout'),
     url(r'^bannedips$', 'thechillbar.views.bannedips', name='bannedips'),
     url(r'^signlog$', 'thechillbar.views.signlog', name='signlog'),
+    url(r'^ban$', 'thechillbar.views.ban', name='ban'),
+    url(r'^unban$', 'thechillbar.views.unban', name='unban'),
 
     #Resources
     url(r'^assets/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),

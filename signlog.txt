@@ -5,3 +5,209 @@ for the ladies
 POST 02-17-2013 13:10:34 18.96.6.66 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
 POST 02-17-2013 15:17:18 18.111.42.192 wazzup
 
+POST 02-17-2013 15:26:32 18.96.6.66 hellooooo nathan
+POST 02-17-2013 15:27:06 18.96.6.66 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 15:29:01 18.96.6.66 foo bar baz
+POST 02-17-2013 15:29:59 18.111.44.16 gvbcngdhn
+POST 02-17-2013 15:31:23 18.96.6.66 a message
+POST 02-17-2013 15:33:52 18.96.6.66 another message
+POST 02-17-2013 15:38:15 18.111.44.16 <marquee>lol</marquee>
+POST 02-17-2013 15:38:58 18.111.44.16 <b>lol</b>
+POST 02-17-2013 15:39:00 18.111.42.192 <alert> Hi </alert>
+POST 02-17-2013 15:40:09 18.96.6.66 hello
+POST 02-17-2013 16:20:39 18.111.59.92 Test
+POST 02-17-2013 16:41:26 18.111.59.92 Test
+POST 02-17-2013 16:41:34 18.111.59.92 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 16:41:36 18.111.59.92 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 16:45:18 18.111.59.92 Test
+POST 02-17-2013 16:46:27 18.111.59.92 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 16:46:56 18.111.59.92 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 16:48:59 18.111.44.16 sdaofihasdo;fasd
+POST 02-17-2013 16:59:23 18.111.44.16 TROLOLOL
+POST 02-17-2013 16:59:29 18.111.44.16 ANTIDOTE
+POST 02-17-2013 16:59:45 18.111.44.16 ANTIDOTE WUBWUBWUBWUBWUBWUWBUWBUWBWUBWUWB
+POST 02-17-2013 16:59:49 18.111.44.16 ANTIDOTE WUBWUBWUBWUBWUBWUWBUWBUWBWUBWUWB
+POST 02-17-2013 16:59:52 18.111.44.16 ANTIDOTE WUBWUBWUBWUBWUBWUWBUWBUWBWUBWUWB
+POST 02-17-2013 17:00:08 18.111.44.16 ANTIDOTE WUBWUBWUBWUBWUBWUWBUWBUWBWUBWUWB
+POST 02-17-2013 18:36:56 18.96.2.206 sadfsdaf
+POST 02-17-2013 18:37:02 18.96.2.206 sadfsdaf
+POST 02-17-2013 18:37:31 198.228.201.157 Sjsjk
+POST 02-17-2013 18:37:59 198.228.201.157 A
+POST 02-17-2013 18:38:18 198.228.201.157 A
+POST 02-17-2013 18:38:21 198.228.201.157 Agh
+POST 02-17-2013 18:38:35 198.228.201.157 Agh
+POST 02-17-2013 18:38:36 198.228.201.157 Agh
+POST 02-17-2013 18:38:36 198.228.201.157 Agh
+POST 02-17-2013 18:38:37 198.228.201.157 Agh
+POST 02-17-2013 18:38:38 198.228.201.157 Agh
+POST 02-17-2013 18:38:38 198.228.201.157 Agh
+POST 02-17-2013 18:38:38 198.228.201.157 Agh
+POST 02-17-2013 21:04:07 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 21:04:09 18.111.46.214 
+POST 02-17-2013 21:30:26 18.111.46.214 foo
+POST 02-17-2013 21:31:23 18.111.46.214 nom nom nom
+POST 02-17-2013 21:36:53 18.111.46.214 lulz
+POST 02-17-2013 21:37:33 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 21:37:35 18.111.46.214 
+POST 02-17-2013 21:37:43 18.111.46.214 halloooooo
+POST 02-17-2013 21:38:52 18.111.46.214 test message
+POST 02-17-2013 21:40:21 18.111.46.214 
+POST 02-17-2013 21:40:25 18.111.46.214 
+POST 02-17-2013 21:40:40 18.111.46.214 
+POST 02-17-2013 21:40:53 18.111.46.214 
+POST 02-17-2013 21:41:04 18.111.46.214 
+POST 02-17-2013 21:44:43 18.111.46.214 test message
+POST 02-17-2013 21:45:02 18.111.46.214 another test
+POST 02-17-2013 21:49:55 18.111.46.214 new message
+POST 02-17-2013 22:02:16 18.111.59.92 save me some wannnnngzzzzz
+POST 02-17-2013 22:21:52 18.111.42.192 yo bro
+POST 02-17-2013 22:21:55 18.111.42.192 yo bro
+POST 02-17-2013 22:21:56 18.111.42.192 yo bro
+POST 02-17-2013 22:21:56 18.111.42.192 yo bro
+POST 02-17-2013 22:22:03 18.111.42.192 chill
+POST 02-17-2013 22:32:13 18.111.92.212 <red>Go<hold><flash>ZACH
+POST 02-17-2013 22:32:53 18.111.92.212 <red>Bobby<hold><flash>HOW'S MAH DICK TASTE
+POST 02-17-2013 22:36:14 70.192.2.155 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 22:42:07 18.111.33.227 Do the Harlem Shake
+POST 02-17-2013 22:43:42 18.111.33.227 There are women in the CAMBRIDGE, MA area right now, and want to chat!
+POST 02-17-2013 22:48:12 198.228.200.22 Poop
+POST 02-17-2013 22:49:16 198.228.200.22 <red>Chris<hold><flash>HOWS MAH DICK TASTE
+POST 02-17-2013 22:49:55 18.111.33.227 Nasty, son -Chris
+POST 02-17-2013 22:49:58 18.111.33.227 Nasty, son -Chris
+POST 02-17-2013 22:50:02 18.111.33.227 Nasty, son -Chris
+POST 02-17-2013 22:50:05 18.111.33.227 Nasty, son -Chris
+POST 02-17-2013 22:50:09 18.111.33.227 Nasty, son -Chris
+POST 02-17-2013 22:50:11 18.111.33.227 Nasty, son -Chris
+POST 02-17-2013 22:50:12 18.111.33.227 Nasty, son -Chris
+POST 02-17-2013 22:50:25 18.111.33.227 Nasty, son -Chris
+POST 02-17-2013 22:50:28 18.111.33.227 Nasty, son -Chris
+POST 02-17-2013 22:50:28 18.111.33.227 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 22:50:29 18.111.33.227 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 22:51:12 70.192.2.155 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 22:51:34 18.111.33.227 You've been banned!
+POST 02-17-2013 22:51:52 18.111.42.192 BANHAMMER
+POST 02-17-2013 22:52:22 198.228.201.160 Poo
+POST 02-17-2013 22:52:30 18.111.42.192 BANHAMMER
+POST 02-17-2013 22:55:03 198.228.201.143 <red>Chris<hold><flash>Mah nuts miss your saliva
+POST 02-17-2013 22:55:24 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 22:56:00 18.111.46.214 new message
+POST 02-17-2013 22:57:51 198.228.201.155 <green>My poor dry nuts<hold><flash>Chris, you're my only hope
+POST 02-17-2013 22:58:06 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 22:59:00 18.111.46.214 moar message!
+POST 02-17-2013 22:59:50 18.111.46.214 moar moar moar
+POST 02-17-2013 22:59:59 198.228.201.146 <red>Chris<hold><flash>Mah nuts. Your mouth
+POST 02-17-2013 23:00:04 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 23:07:06 18.111.61.167 <yellow>My pee is this color<hold><flash>YELLOW
+POST 02-17-2013 23:07:20 18.111.42.192 
+POST 02-17-2013 23:07:27 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 23:56:05 18.96.2.206 ghdfj
+POST 02-17-2013 23:56:15 18.96.2.206 ghdfj
+POST 02-17-2013 23:56:41 18.96.2.206 ghdfjsdasd
+POST 02-17-2013 23:56:43 18.96.2.206 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 23:56:55 18.96.2.206 ghdfjsdasdsadsad
+POST 02-17-2013 23:57:05 18.96.2.206 ghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxz
+POST 02-17-2013 23:57:19 18.96.2.206 ghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxzczxczx
+
+sdgfasdf
+sdaf
+
+sdaf
+sghdfjsdasdsadsadxz
+POST 02-17-2013 23:57:48 18.96.2.206 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+POST 02-17-2013 23:57:53 18.96.2.206 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-17-2013 23:58:55 18.96.2.206 asdas
+POST 02-17-2013 23:59:24 18.96.2.206 sadsad
+POST 02-17-2013 23:59:39 18.96.2.206 sadsadxzc
+POST 02-17-2013 23:59:44 18.96.2.206 sadsadxzcsadasd
+POST 02-18-2013 00:02:21 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 00:02:53 18.111.46.214 lolololol
+POST 02-18-2013 00:02:57 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 00:05:35 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 00:05:47 18.111.46.214 YOLO
+POST 02-18-2013 00:05:52 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 00:06:02 18.111.42.192 YOU ALL SUCK
+POST 02-18-2013 00:06:15 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 00:06:18 18.111.42.192 YOU ALL SUCK
+POST 02-18-2013 00:07:22 192.54.222.11 Chris Dolan sucks
+
+POST 02-18-2013 00:07:29 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 00:08:23 198.228.201.156 Chris Dolan sucks
+J
+POST 02-18-2013 00:08:35 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 00:15:34 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 00:17:08 18.111.42.192 YOU ALL SUCK
+POST 02-18-2013 00:24:03 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 00:59:09 70.192.2.155 Moar text
+POST 02-18-2013 01:00:32 70.192.2.155 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 01:02:12 70.192.2.155 Test message
+POST 02-18-2013 01:02:47 70.192.2.155 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 01:03:00 70.192.2.155 
+POST 02-18-2013 01:03:09 70.192.2.155 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 02-18-2013 01:09:23 18.111.46.214 da gooz has 3 aces :O
+POST 02-18-2013 01:09:48 18.111.46.214 <red><7><speed3>welcome to<hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
