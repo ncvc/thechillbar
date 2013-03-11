@@ -50,7 +50,7 @@ class MessagePusher(threading.Thread, object):
         while not self.stop_request.isSet():
             try:
                 next_message = self.queue.get(False)
-                self.sign.sendText('A', AlphaSign.encodeText(next_message), AlphaSign.MODE_ROTATE)
+                self.sign.sendText('A', AlphaSign.encodeText(next_message), AlphaSign.MODE_AUTO)
             except Queue.Empty:
                 pass
             time.sleep(self.poll_time)

@@ -7,6 +7,16 @@ function unbanIP(ip) {
     $.post("/unban", { "ip" : ip });
 }
 
+function showAdminSuccessAlert() {
+    $("#admin-update-alert-placeholder").empty();
+    data = {"type" : "alert alert-success",
+            "id" : "admin-update-alert-success",
+            "primary" : "Refreshed!",
+            "secondary" : ""}
+    $("#alert-template").tmpl(data).appendTo("#admin-update-alert-placeholder");
+    setTimeout(function() { $(".alert").alert('close'); }, 3000);
+}
+
 function updateSignLog() {
     $.getJSON("/signlog", function(data) {
 	$("#sign-log-table-body").empty();
@@ -39,7 +49,6 @@ function updateSignLog() {
 		    ban_button.hide();
 		}
 	    }
-	    
 	});
     });
 }
@@ -69,5 +78,6 @@ function updateAll() {
 
 $(function() {
     updateAll();
-    $("#refresh-sign-log-button").click(function() { updateAll(); });
+    $("#refresh-sign-log-button").click(function(){ updateAll();
+						    showAdminSuccessAlert();});
 });

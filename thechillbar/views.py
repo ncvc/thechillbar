@@ -3,11 +3,14 @@ from django.contrib import auth
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import requires_csrf_token
+from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.decorators.http import require_http_methods
 from django.template import RequestContext
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
+from ratelimit.decorators import ratelimit
 import settings
 import json
 import simplejson
@@ -24,23 +27,30 @@ from bar_lighting import Strip, Animator
 NUM_PIXELS = 32
 UGC_LENGTH_LIMIT = 300
 
-@csrf_exempt
+DEFAULT_MESSAGE = "<red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\\n>check us out at thechillbar.mit.edu"
+
 @require_http_methods(['GET'])
 def home(request):
     return filter('index.html', request, 'log.txt', '')
-    
-@csrf_exempt
+
+@requires_csrf_token
+@ensure_csrf_cookie
 @require_http_methods(['POST'])
+@ratelimit(block=True, rate="4/m", skip_if=lambda request: request.user.is_authenticated())
 def display(request):
     command = request.POST.get('command')[:UGC_LENGTH_LIMIT]
     if checkIP(request):
         Animator.sendMessage(command)
     return filter('index.html', request, 'displaylog.txt', command)
 
-@csrf_exempt
+@requires_csrf_token
+@ensure_csrf_cookie
 @require_http_methods(['POST'])
+@ratelimit(block=True, rate="5/m", skip_if=lambda request: request.user.is_authenticated())
 def sign(request):
     message = request.POST.get('message')[:UGC_LENGTH_LIMIT]
+    if message == '':
+        message = DEFAULT_MESSAGE
     if request.method == "POST" and checkIP(request):
         SignAnimator.sendMessage(message.replace('\n', ''))
     return filter('index.html', request, 'signlog.txt', message)

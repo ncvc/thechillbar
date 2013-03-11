@@ -37,7 +37,8 @@
 	<ul class="nav nav-tabs">
 	  <li class="active"><a href="#bar-display-tab" data-toggle="tab">Bar Display</a></li>
 	  <li><a href="#led-sign-tab" data-toggle="tab">LED Sign</a></li>
-	  <li><a href="#playlist-tab" data-toggle="tab">Playlist</a></li>
+	  <li><a href="#menu-tab" data-toggle="tab">Menu</a></li>
+<!--	  <li><a href="#playlist-tab" data-toggle="tab">Playlist</a></li> -->
 	  {% if user.is_authenticated %}
 	  <li><a href="#admin-tab" data-toggle="tab">Admin</a></li>
 	  {% endif %}
@@ -99,7 +100,8 @@
 	    </table>
 	  </div><!--playlist tab-->
 	  <div class="tab-pane" id="admin-tab">
-	    <a class="btn" id="refresh-sign-log-button"><i class="icon-refresh"></i> Refresh</a>
+	    <div id="admin-update-alert-placeholder"></div>
+	    <a type="button" class="btn" id="refresh-sign-log-button"><i class="icon-refresh"></i> Refresh</a>
 	    <table class="table table-striped" id="sign-log-table">
 	      <thead>
 		<tr>
@@ -122,6 +124,32 @@
 	      </tbody>
 	    </table>
 	  </div><!--admin tab-->
+	  <div class="tab-pane" id="menu-tab">
+	    <h4><u>Mixed Drinks</u></h4>
+	    <dl>
+	      <dt>Screwdriver</dt><dd>Vodka & Orange juice</dd><br>
+	      <dt>Cosmopolitan</dt><dd>Vodka, Triple sec, Cranberry & Lime juices</dd><br>
+	      <dt>Sex on the Beach</dt><dd>Vodka, Peach schnapps, Orange & Cranberry juices</dd><br>
+	      <dt>Cuba Libre</dt><dd>Rum & Coke</dd><br>
+	      <dt>Classic Daiquiri</dt><dd>Rum, Lime juice, Simple syrup</dd><br>
+	      <dt>Rum Punch</dt><dd>Rum, Triple sec, Peach schnapps, Lemon, Lime, Orange & Cranberry juices, Simple syrup</dd><br>
+	      <dt>Margarita</dt><dd>Tequila, Triple sec, Lime juice</dd><br>
+	      <dt>Tequila Sunrise</dt><dd>Tequila, Orange juice, Grenadine</dd><br>
+	      <dt>Tom Collins<dt><dd>Gin, Lemon juice, Simple syrup, 7UP<dd><br>
+	      <dt>Long Island Iced Tea</dt><dd>Vodka, Rum, Gin, Tequila, Triple sec, Lemon juice, Splash of Coke</dd><br>
+	    
+	      <dt>AMF</dt><dd>Vodka, Rum, Gin, Tequila, Blue curacao, Lemon juice, Splash of 7Up</dd><br>
+	      <dt>Sex in the Shower</dt><dd>Blue curacao, Butterscotch schnapps, Orange juice</dd><br>
+	    </dl>
+	    <h4><u>Specialty Shots</u></h4>
+	    <dl>
+	      <dt>Hemorrhaged Alien Brain</dt><dd>Our signature shot. Peach schnapps, Irish Cream, Blue Curacao, Grenadine</dd><br>
+	      <dt>Kamikaze</dt><dd>Vodka, Triple sec, Lime juice</dd><br>
+	      <dt>Lemon Drop</dt><dd>Vodka, Lemon juice, Simple syrup</dd><br>
+	      <dt>Buttery Nipple</dt><dd>Irish Cream & Butterscotch schnapps</dd><br>
+	      <dt>Maple Syrup</dt><dd>Rum, Butterscotch schnapps, Simple syrup</dd><br>
+	    </dl>
+	  </div><!--menu tab-->
 	</div> <!--tab-content-->
       </div><!--span6-->
       <div class="span3 hidden-phone"></div>
@@ -146,7 +174,7 @@
       <tr>
 	<td>${ip}</td>
 	<td>${message}</td>
-	<td><a class="btn btn-danger" id="ip-entry-${index}-ban-button" data-loading-text="Banning..."><i class="icon-ban-circle"></i></a></td>
+	<td><a class="btn btn-danger" id="ip-entry-${index}-ban-button"><i class="icon-ban-circle"></i></a></td>
       </tr>
     </script>
 
@@ -164,13 +192,14 @@
 	<td><a class="btn btn-success" id="banned-ip-entry-${index}-unban-button"><i class="icon-ok-circle"></i></a></td>
       </tr>
     </script>
+    {% endif %}    
+
     <script id="alert-template" type="text/x-jquery-tmpl">
       <div class="alert ${type} fade in" id="${id}">
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
 	<strong>${primary}</strong> ${secondary}
       </div>
     </script>
-    {% endif %}
 
   </body>
 </html>
