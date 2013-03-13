@@ -29,6 +29,7 @@ UGC_LENGTH_LIMIT = 300
 
 DEFAULT_MESSAGE = "<red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\\n>check us out at thechillbar.mit.edu"
 
+@ensure_csrf_cookie
 @require_http_methods(['GET'])
 def home(request):
     return filter('index.html', request, 'log.txt', '')

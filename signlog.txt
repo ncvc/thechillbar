@@ -743,3 +743,9 @@ POST 03-11-2013 01:44:09 18.111.111.82 <red><7><speed3>welcome to <hold><green><
 POST 03-11-2013 01:44:11 18.111.111.82 <red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
 POST 03-11-2013 01:44:11 18.111.111.82 <red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
 POST 03-11-2013 01:44:12 18.111.111.82 <red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 03-12-2013 14:02:37 18.24.1.69 im watching you...
+POST 03-12-2013 14:04:06 18.24.1.69 <red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 03-12-2013 14:04:07 18.24.1.69 <red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 03-12-2013 14:04:08 18.24.1.69 <red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 03-12-2013 14:04:09 18.24.1.69 <red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
+POST 03-12-2013 14:04:10 18.24.1.69 <red><7><speed3>welcome to <hold><green><7shadow><speed1><flash>thechillbar</flash><rotate><amber><7><speed3><\n>check us out at thechillbar.mit.edu
